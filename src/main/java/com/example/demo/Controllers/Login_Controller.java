@@ -18,6 +18,7 @@ import com.example.demo.Entity.Login;
 import com.example.demo.Services.Login_Service;
 
 @Controller
+
 public class Login_Controller {
 	
 	@Autowired
@@ -41,7 +42,7 @@ public class Login_Controller {
     	{	
     		return "redirect:/";
     	} else {
-    		return "redirect:/pest";
+    		return "redirect:/login";
     	}
 
     }
@@ -49,8 +50,9 @@ public class Login_Controller {
     @RequestMapping(value = {"/logout"}, method = RequestMethod.POST)
     public String logoutDo(HttpServletRequest request,HttpServletResponse response)
     {
-        return "redirect:/pest";
+        return "redirect:/login";
     }
+
     
 }
 
