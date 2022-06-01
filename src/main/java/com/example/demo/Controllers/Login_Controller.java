@@ -24,8 +24,7 @@ public class Login_Controller {
 	@Autowired
     private Login_Service userService;
                              
-    @GetMapping("/login")
-           
+    @GetMapping("/login")     
     public ModelAndView login() {
     	ModelAndView mav = new ModelAndView("login");
         mav.addObject("user", new Login());
