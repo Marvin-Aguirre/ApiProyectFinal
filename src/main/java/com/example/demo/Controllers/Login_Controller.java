@@ -42,7 +42,7 @@ public class Login_Controller {
     	{	
     		return "redirect:/";
     	} else {
-    		return "redirect:/login";
+    		return "redirect:/pest";
     	}
 
     }
